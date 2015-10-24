@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  root                  'application#home'
-  get 'about',      to: 'application#about'
-  get 'academics',  to: 'application#academics'
-  get 'admissions', to: 'application#admissions'
-  get 'courses',    to: 'application#courses'
-  get 'contact',    to: 'application#contact'
+
+  root                  'pages#home'
+  get 'about',      to: 'pages#about'
+  get 'academics',  to: 'pages#academics'
+  get 'admissions', to: 'pages#admissions'
+  get 'courses',    to: 'pages#courses'
+  get 'contact',    to: 'pages#contact'
 
 end
